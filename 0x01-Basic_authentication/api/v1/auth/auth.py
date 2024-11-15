@@ -2,7 +2,7 @@
 """ API Authentication
 """
 from flask import request
-from typing import List, Typevar
+from typing import List, TypeVar
 
 class Auth():
     """ Manages API authetication"""
@@ -14,7 +14,7 @@ class Auth():
             path += '/'
         for p in excluded_paths:
             if p.endswith('*'):
-                if p.endswith(p[:1]):
+                if path.startswith(p[:1]):
                     return False
         return False if path in excluded_paths else True
         
