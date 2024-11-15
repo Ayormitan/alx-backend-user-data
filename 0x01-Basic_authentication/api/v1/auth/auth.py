@@ -23,7 +23,7 @@ class Auth():
         if request:
             return request.headers.get('Authorization')
 
-    def current_user(self, request=None) -> Typevar('User'):
+    def current_user(self, request=None) -> TypeVar('User'):
         """ Current User Method """
         return None
 
