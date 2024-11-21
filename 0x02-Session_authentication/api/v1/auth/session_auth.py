@@ -1,9 +1,7 @@
-#!/usr/bin/pyhon3
-"""Session Auth
+#!/usr/bin/env python3
 """
-
 from auth import Auth
-
+"""
 class SessionAuth(Auth):
     """
     SessionAuth class that inherits from Auth
